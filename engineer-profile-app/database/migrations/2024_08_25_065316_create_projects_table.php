@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->ulid('id')->primary();
+            $table->ulid('engineer_id');
             $table->string('name');
             $table->date('start_on');
             $table->date('end_on')->nullable();

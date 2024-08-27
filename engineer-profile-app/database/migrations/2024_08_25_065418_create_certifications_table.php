@@ -15,6 +15,8 @@ return new class extends Migration
             $table->ulid('id')->primary();
             $table->string('name');
             $table->string('image_url')->nullable();
+            $table->string('organization_name')->nullable();
+            $table->date('acquisition_date')->nullable();
             $table->string('score')->nullable();
             $table->timestamps();
         });
